@@ -31,9 +31,21 @@ $( document ).ready(function() {
   $('.task-mark-remove').on('click',function(){
     console.log('This is coming from the second example of doing things on click');
   });
+
+//Marking Item as Complete //
+  //the class we want to target is task-mark-done//
+
+$('.task-mark-done').on('click',function(){
+  //change the colore green//
+ // $('.task-mark-done').css('color','green');//
+  //$(this).css('color' , 'green');
+  $(this).toggleClass('task-done');
+});
   
 
+
 });
+
 
 
 
